@@ -1,0 +1,10 @@
+{
+  "build": {
+    "context": "..",
+    "dockerFile": "./Dockerfile",
+    "target": "dev"
+  }, 
+  "mounts": [
+    "source=jetbrains,target=/home/developer/.cache/JetBrains/RemoteDev/dist,type=volume"
+  ]
+}

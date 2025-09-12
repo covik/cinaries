@@ -24,9 +24,9 @@ RUN deluser --remove-home node \
     && useradd --uid $USER_UID --gid $USER_GID --create-home $USERNAME --shell /bin/bash \
     && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
-    && mkdir -p /home/$USERNAME/.cache/JetBrains/RemoteDev/dist \
-    && chown -R $USERNAME:$USERNAME /home/$USERNAME
-RUN npm install -g @openai/codex
+    && mkdir -p /home/$USERNAME/.cache/JetBrains/RemoteDev/dist /home/$USERNAME/.codex \
+    && chown -R $USERNAME:$USERNAME /home/$USERNAME \
+    && rm -f /usr/local/bin/{npm,yarn}
 USER $USERNAME
 RUN git config --global commit.gpgsign true
 

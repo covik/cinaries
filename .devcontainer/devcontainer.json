@@ -5,6 +5,9 @@
     "target": "dev"
   },
   "postCreateCommand": "pnpm install --frozen-lockfile",
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}"
+  },
   "mounts": [
     "source=jetbrains,target=/home/developer/.cache/JetBrains/RemoteDev/dist,type=volume",
     "source=codex,target=/home/developer/.codex,type=volume"

@@ -1,5 +1,5 @@
 {
-  "name": "trbrpo",
+  "name": "cinaries",
   "private": true,
   "scripts": {
     "build": "turbo run build",

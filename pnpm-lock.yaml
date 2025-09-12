@@ -21,7 +21,7 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
 
-  packages/eslint-config:
+  etc/eslint-config:
     devDependencies:
       '@eslint/js':
         specifier: ^9.34.0
@@ -45,7 +45,7 @@ importers:
         specifier: ^8.40.0
         version: 8.40.0(eslint@9.34.0)(typescript@5.9.2)
 
-  packages/typescript-config: {}
+  etc/typescript-config: {}
 
 packages:
 

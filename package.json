@@ -2,6 +2,30 @@
   "name": "cinaries",
   "private": true,
   "license": "GPL-2.0-only",
+  "description": "Minimal container images that package selected binaries from OSS projects to cut download size, build time and carbon footprint.",
+  "author": {
+    "name": "Mate Nakić",
+    "url": "https://github.com/covik"
+  },
+  "keywords": [
+    "containers",
+    "docker",
+    "podman",
+    "kubernetes",
+    "oci",
+    "binaries",
+    "scratch",
+    "minimal",
+    "sustainability"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covik/cinaries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/covik/cinaries/issues"
+  },
+  "homepage": "https://github.com/covik/cinaries#readme",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

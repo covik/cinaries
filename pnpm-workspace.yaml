@@ -1,2 +1,5 @@
 packages:
-  - "etc/*"
+  - etc/*
+
+onlyBuiltDependencies:
+  - '@vscode/ripgrep'

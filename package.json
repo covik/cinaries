@@ -1,6 +1,7 @@
 {
   "name": "cinaries",
   "private": true,
+  "license": "GPL-2.0-only",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

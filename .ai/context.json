@@ -1,0 +1,42 @@
+{
+  "name": "Cinaries",
+  "pronunciation": "sajnaris",
+  "description": "Distribute standalone binaries as minimal OCI container images. Reduce download size, speed up builds, and lower carbon footprint.",
+  "goals": [
+    "Reduce container image size and network overhead",
+    "Distribute only verified binaries (GPG + SHA256)",
+    "Support consistent tagging across all images",
+    "Encourage standardization around binary-based OCI layers"
+  ],
+  "features": [
+    "SCRATCH-based minimal images with one binary only",
+    "Structured metadata per binary and version",
+    "Support for major, minor, patch, and latest tags",
+    "Automated Dockerfile and changelog generation",
+    "Optional JWS-signed metadata responses",
+    "Optional container image signing (e.g. cosign)"
+  ],
+  "initialPackages": [
+    "composer",
+    "nodejs",
+    "npm",
+    "pnpm",
+    "yarn",
+    "bun",
+    "kubectl",
+    "jq",
+    "wget",
+    "mkcert"
+  ],
+  "imageTagPattern": "cinaries/<tool>:<version>",
+  "usageExample": "COPY --from=cinaries/composer:2.2.24 /usr/bin/composer /usr/bin/composer",
+  "license": "MIT",
+  "status": "alpha",
+  "cliLanguage": "php",
+  "tooling": {
+    "imageSigning": true,
+    "gpgVerification": true,
+    "jwsMetadata": true,
+    "dockerAutomation": true
+  }
+}

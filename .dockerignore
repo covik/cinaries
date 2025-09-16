@@ -10,3 +10,4 @@ node_modules
 Dockerfile*
 .dockerignore
 .turbo
+credentials.json

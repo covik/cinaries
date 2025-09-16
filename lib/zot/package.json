@@ -1,0 +1,9 @@
+{
+  "name": "@repo/zot",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-2.0-only",
+  "scripts": {
+    "dev": "zot serve ./config.json"
+  }
+}

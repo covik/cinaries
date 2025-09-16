@@ -1,0 +1,39 @@
+{
+  "storage": {
+    "rootDirectory": "/home/developer/registry"
+  },
+  "http": {
+    "address": "0.0.0.0",
+    "port": "5000",
+    "compat": ["docker2s2"]
+  },
+  "log": {
+    "level": "info"
+  },
+  "extensions": {
+    "search": {
+      "enable": true,
+      "cve": {
+        "updateInterval": "2h"
+      }
+    },
+    "ui": {
+      "enable": true
+    },
+    "sync": {
+      "credentialsFile": "./credentials.json",
+      "registries": [
+        {
+          "urls": ["https://docker.io/library"],
+          "onDemand": true,
+          "tlsVerify": true,
+          "content": [
+            {
+              "prefix": "**"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

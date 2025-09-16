@@ -47,6 +47,8 @@ importers:
 
   etc/typescript-config: {}
 
+  lib/zot: {}
+
   src/kubectl: {}
 
 packages:

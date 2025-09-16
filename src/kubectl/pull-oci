@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-TAG=$1
-IMAGE="docker.io/bitnami/kubectl:$TAG"
-DIGEST=$(crane digest "$IMAGE")
-IMAGE_WITH_DIGEST="$IMAGE@$DIGEST"
-echo "Pulling remote image $IMAGE_WITH_DIGEST to $PWD/src"
-crane pull --format=oci "$IMAGE_WITH_DIGEST" src

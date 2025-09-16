@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -o xtrace
+
+IMAGE="docker.io/bitnami/kubectl"
+TAG=$1
+DIGEST=$2
+OUTDIR="$PWD/src"
+
+skopeo copy --format=oci --multi-arch=all --dest-oci-accept-uncompressed-layers "docker://$IMAGE@$DIGEST" "oci:$OUTDIR:$TAG"
+git status $OUTDIR

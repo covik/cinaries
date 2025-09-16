@@ -2,7 +2,9 @@
 
 FROM node:24.8.0-trixie-slim@sha256:a7f91166324d17fa1029718c876f3b02fb542e64d3cf40208ae6d31ff33c90c9 AS base
 ENV TERM="xterm" \
-    COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+    COREPACK_ENABLE_DOWNLOAD_PROMPT=0 \
+    DO_NOT_TRACK=1 \
+    TURBO_TELEMETRY_DISABLED=1
 RUN apt-get update \
     && apt-get --no-install-recommends install -y \
         ca-certificates \

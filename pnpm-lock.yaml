@@ -47,6 +47,8 @@ importers:
 
   etc/typescript-config: {}
 
+  src/kubectl: {}
+
 packages:
 
   '@eslint-community/eslint-utils@4.7.0':

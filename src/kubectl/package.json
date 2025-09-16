@@ -1,0 +1,9 @@
+{
+  "name": "@cinaries/kubectl",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-2.0-only",
+  "scripts": {
+    "build": "can't wait to actually build"
+  }
+}

@@ -4,6 +4,7 @@
     "dockerfile": "./Dockerfile",
     "target": "dev"
   },
+  "init": true,
   "postCreateCommand": "pnpm install --frozen-lockfile",
   "remoteEnv": {
     "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}"

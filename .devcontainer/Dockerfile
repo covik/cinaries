@@ -5,6 +5,7 @@ ENV TERM="xterm" \
     COREPACK_ENABLE_DOWNLOAD_PROMPT=0 \
     DO_NOT_TRACK=1 \
     TURBO_TELEMETRY_DISABLED=1
+ARG DEBIAN_FRONTEND=noninteractive 
 RUN apt-get update \
     && apt-get --no-install-recommends install -y \
         ca-certificates \

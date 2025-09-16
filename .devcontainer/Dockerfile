@@ -12,6 +12,7 @@ RUN apt-get update \
         curl \
         git \
         gnupg2 \
+        less \
         jq \
         openssh-client \
         skopeo \

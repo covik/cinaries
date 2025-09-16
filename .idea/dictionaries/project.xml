@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>devcontainer</w>
+      <w>skopeo</w>
     </words>
   </dictionary>
 </component>

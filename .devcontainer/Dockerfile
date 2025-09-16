@@ -12,6 +12,7 @@ RUN apt-get update \
         git \
         gnupg2 \
         openssh-client \
+        skopeo \
         sudo \
         vim \
     && rm -rf /var/lib/apt/lists/* \

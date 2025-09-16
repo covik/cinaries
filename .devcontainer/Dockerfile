@@ -1,5 +1,7 @@
 # syntax=docker/dockerfile:1@sha256:dabfc0969b935b2080555ace70ee69a5261af8a8f1b4df97b9e7fbcf6722eddf
 
+FROM gcr.io/go-containerregistry/crane:latest@sha256:13952b31a107e8bc4e4c170b0097edb708cd468486a28fc20bbf0d49f71c74e1 AS crane
+
 FROM node:24.8.0-trixie-slim@sha256:a7f91166324d17fa1029718c876f3b02fb542e64d3cf40208ae6d31ff33c90c9 AS base
 ENV TERM="xterm" \
     COREPACK_ENABLE_DOWNLOAD_PROMPT=0 \
@@ -22,6 +24,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean \
     && corepack enable
+COPY --from=crane /ko-app/crane /usr/local/bin/crane
 
 FROM base AS dev
 ARG USERNAME=developer

@@ -4,6 +4,6 @@
   "private": true,
   "license": "GPL-2.0-only",
   "scripts": {
-    "build": "can't wait to actually build"
+    "build": "./pull-oci 1.30.0"
   }
 }

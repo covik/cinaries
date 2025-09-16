@@ -30,4 +30,3 @@ RUN deluser --remove-home node \
     && rm -f /usr/local/bin/{npm,yarn}
 USER $USERNAME
 RUN git config --global commit.gpgsign true
-

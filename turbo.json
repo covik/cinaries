@@ -1,7 +1,6 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
-  "cacheDir": "var/turbo",
   "daemon": false,
   "tasks": {
     "build": {

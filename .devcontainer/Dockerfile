@@ -14,6 +14,7 @@ RUN apt-get update \
         openssh-client \
         skopeo \
         sudo \
+        umoci \
         vim \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean \

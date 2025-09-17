@@ -5,6 +5,9 @@
   "license": "GPL-2.0-only",
   "type": "module",
   "scripts": {
-    "build": "go build -v -o out/ ."
+    "build": "go build -v -o out/layoci ."
+  },
+  "bin": {
+    "layoci": "./out/layoci"
   }
 }

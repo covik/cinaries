@@ -12,7 +12,8 @@
   "mounts": [
     "source=jetbrains,target=/home/developer/.cache/JetBrains/RemoteDev/dist,type=volume",
     "source=codex,target=/home/developer/.codex,type=volume",
-    "source=registry,target=/home/developer/registry,type=volume"
+    "source=registry,target=/home/developer/registry,type=volume",
+    "source=golang,target=/home/developer/go/pkg,type=volume"
   ],
   "forwardPorts": [5000]
 }

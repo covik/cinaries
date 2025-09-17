@@ -5,6 +5,6 @@
   "license": "GPL-2.0-only",
   "type": "module",
   "scripts": {
-    "build": "go build -v -o dist/ ."
+    "build": "go build -v -o out/ ."
   }
 }

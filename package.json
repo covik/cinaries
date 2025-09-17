@@ -30,8 +30,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,js,md,json}\"",
-    "format:check": "prettier --check \"**/*.{ts,js,md,json}\" --log-level=warn",
+    "format": "prettier --write \"**/*.{ts,mts,js,mjs,md,json}\"",
+    "format:check": "prettier --check \"**/*.{ts,mts,js,mjs,md,json}\" --log-level=warn",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {

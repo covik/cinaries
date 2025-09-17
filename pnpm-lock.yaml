@@ -51,6 +51,9 @@ importers:
 
   src/kubectl:
     devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../etc/typescript-config
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4

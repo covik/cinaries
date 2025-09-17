@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/covik/cinaries#readme",
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --summarize --log-order=grouped --ui=stream --output-logs=errors-only",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,mts,js,mjs,md,json}\"",

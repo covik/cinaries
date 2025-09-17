@@ -4,14 +4,9 @@
   "private": true,
   "license": "GPL-2.0-only",
   "scripts": {
-    "build": "./pull-by-digest 1.30.0 sha256:09c66fb4719def5c6b495dd7fe69dc580867b905c9470e4354d5a862310e6ffd",
-    "copy-files": "./lib/copy-files-from-image.mts sha256:53ae7d4830054155f58961e01b7a21d182909bab553a9e03af0543e2d08cb644",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^24.5.1",
-    "zx": "^8.8.1"
+    "@repo/typescript-config": "workspace:*"
   }
 }

@@ -4,6 +4,7 @@
       <w>devcontainer</w>
       <w>layoci</w>
       <w>skopeo</w>
+      <w>testdata</w>
       <w>umoci</w>
     </words>
   </dictionary>

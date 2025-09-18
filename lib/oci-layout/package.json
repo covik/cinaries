@@ -5,7 +5,9 @@
   "license": "GPL-2.0-only",
   "type": "module",
   "scripts": {
-    "build": "go build -v -o out/layoci ."
+    "build": "go build -v -o out/layoci .",
+    "format": "go fmt .",
+    "format:check": "gofmt -l . | { read x && echo \"$x\"; cat; exit 1; }\n"
   },
   "bin": {
     "layoci": "./out/layoci"

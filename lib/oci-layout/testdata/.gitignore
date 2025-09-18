@@ -1,0 +1,8 @@
+kubectl-src/blobs/sha256/*
+!kubectl-src/blobs/sha256/
+!kubectl-src/blobs/sha256/26da70df21e79edc1b1f633e8dcf45a5de2f7bae5811973d07225634285d7a95
+!kubectl-src/blobs/sha256/2803648a4f6889b2693358cfecb3353f47689e368aa51c2d5dd5d4ec54dd4fa0
+!kubectl-src/blobs/sha256/3009db7035d68a1c5bdd9124b9bc3386902595a57a5ec7efe5eda31db22408c9
+!kubectl-src/blobs/sha256/53ae7d4830054155f58961e01b7a21d182909bab553a9e03af0543e2d08cb644
+!kubectl-src/blobs/sha256/66ff09865ab691a3e8198e0929ff3b74e17dab39e6790c1371098893c3c01983
+

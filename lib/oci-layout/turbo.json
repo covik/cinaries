@@ -3,7 +3,16 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "outputs": ["out/**"]
+      "inputs": ["**/*.go", "go.mod", "go.sum", "$TURBO_ROOT$/go.work"],
+      "outputs": ["out/**"],
+      "env": [
+        "GOOS",
+        "GOARCH",
+        "CGO_ENABLED",
+        "GOTOOLCHAIN",
+        "GOFLAGS",
+        "GOWORK"
+      ]
     }
   }
 }

@@ -30,7 +30,8 @@ COPY --from=zot /usr/local/bin/zot-* /usr/local/bin/zot
 COPY --from=golang /usr/local/go /usr/local/go
 ENV GOTOOLCHAIN=local \
     CGO_ENABLED=0 \
-    GOROOT=/usr/local/go
+    GOROOT=/usr/local/go \
+    GOFLAGS="-trimpath -buildvcs=false -mod=readonly"
 ENV PATH="$GOROOT/bin:$PATH"
 
 FROM base AS dev

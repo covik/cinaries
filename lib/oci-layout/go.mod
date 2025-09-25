@@ -1,3 +1,28 @@
 module github.com/covik/cinaries/lib/oci-layout
 
 go 1.25.1
+
+require (
+	github.com/opencontainers/go-digest v1.0.0
+	github.com/opencontainers/image-spec v1.1.1
+	github.com/opencontainers/runtime-spec v1.3.0
+	github.com/opencontainers/umoci v0.6.0
+)
+
+require (
+	github.com/AdaLogics/go-fuzz-headers v0.0.0-20240806141605-e8a1dd7889d6 // indirect
+	github.com/apex/log v1.9.0 // indirect
+	github.com/blang/semver/v4 v4.0.0 // indirect
+	github.com/cyphar/filepath-securejoin v0.6.1 // indirect
+	github.com/klauspost/compress v1.18.2 // indirect
+	github.com/klauspost/pgzip v1.2.6 // indirect
+	github.com/moby/sys/user v0.4.0 // indirect
+	github.com/moby/sys/userns v0.1.0 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+	github.com/rootless-containers/proto/go-proto v0.0.0-20230421021042-4cd87ebadd67 // indirect
+	github.com/sirupsen/logrus v1.9.3 // indirect
+	github.com/vbatts/go-mtree v0.6.1-0.20250911112631-8307d76bc1b9 // indirect
+	golang.org/x/crypto v0.46.0 // indirect
+	golang.org/x/sys v0.40.0 // indirect
+	google.golang.org/protobuf v1.36.11 // indirect
+)

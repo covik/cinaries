@@ -7,6 +7,11 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/var" />
+      <excludeFolder url="file://$MODULE_DIR$/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/oci-layout/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/oci-layout/out" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/oci-layout/testdata/kubectl-rootfs" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/oci-layout/testdata/kubectl-src" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

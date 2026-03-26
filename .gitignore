@@ -1,6 +1,1 @@
-node_modules
 *.log
-.turbo
-credentials.json
-out
-**/.prettierignore

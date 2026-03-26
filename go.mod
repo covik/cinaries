@@ -1,4 +1,4 @@
-module github.com/covik/cinaries/lib/oci-layout
+module github.com/covik/cinaries
 
 go 1.25.1
 

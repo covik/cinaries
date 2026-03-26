@@ -1,19 +1,10 @@
 {
   "build": {
-    "context": "..",
-    "dockerfile": "./Dockerfile",
-    "target": "dev"
+    "dockerfile": "./Dockerfile"
   },
-  "init": true,
-  "postCreateCommand": "pnpm install --frozen-lockfile",
   "remoteEnv": {
-    "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}"
+    "CGO_ENABLED": "0",
+    "GOFLAGS": "-trimpath -buildvcs=false -mod=readonly"
   },
-  "mounts": [
-    "source=jetbrains,target=/home/developer/.cache/JetBrains/RemoteDev/dist,type=volume",
-    "source=codex,target=/home/developer/.codex,type=volume",
-    "source=registry,target=/home/developer/registry,type=volume",
-    "source=golang,target=/home/developer/go/pkg,type=volume"
-  ],
-  "forwardPorts": [5000]
+  "postCreateCommand": "go mod download"
 }

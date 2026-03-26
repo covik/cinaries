@@ -1,7 +1,0 @@
-packages:
-  - src/*
-  - lib/*
-  - etc/*
-
-onlyBuiltDependencies:
-  - '@vscode/ripgrep'
